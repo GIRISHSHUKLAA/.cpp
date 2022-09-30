@@ -1,0 +1,25 @@
+Infix, prefix & Postfix
+Order of Precedence and Associativity Rules
+1.	^        R-L
+2.	*, /    L-R
+3.	+,-     L-R
+4.	 (), {}, []
+
+
+Infix - Generally we write in Programs
+Operand-Operator-Operand
+Prefix – Operator 1st then operand
+Operator-Operand-Operand
+Postfix – Operand 1st then operator
+Operand-Operand-Operator
+Solve the below Problems
+2+3*2
+(2+3)*2
+1+2*5+30/5
+
+https://www.youtube.com/watch?v=7SBN3WCsl3g
+Prefix
+X+y*z
+(x+y)*z
+X^y^z
+X+y/z-w*u
