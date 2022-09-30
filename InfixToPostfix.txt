@@ -1,0 +1,29 @@
+Infix to Post fix using stack
+1.	Create an empty stack
+2.	Do the following for every character X from left to right
+3.	If X is 
+a)	Operand: output it
+b)	Left Parenthesis: push to stack
+c)	 Right Parenthesis: Pop from stack until left parenthesis is found, output the popped operator
+
+Deal with the stack
+d)	Operator: If stack is empty, push X to stack else compare with stack top
+i)	Higher Precedence (than stack top) push to stack
+ii)	Lower Precedence (pop stack and output until a higher precedence operator is found. Then Push X to stack
+iii)	Equal precedence use associativity
+iv)	Pop & output everything from stack
+
+Infix to Prefix using stack
+1.	Create an empty stack.
+2.	 Create an empty String Prefix.
+3.	Do the Following every character C from right to left
+4.	If C is :
+a)	Operand: Push it to prefix 
+b)	Right Parenthesis: Push to stack
+c)	Left Parenthesis: Pop from stack until right parenthesis is found. Append the Popped character to Prefix
+d)	Operator: If stack is empty, push C to stack else compare with stack top
+i)	Higher Precedence (than stack top): Push C to stack
+ii)	Lower Precedence: POP stack top and then append the popped item to prefix until a higher precedence operator is found (or stack becomes empty). Push C to Stack
+iii)	Equal Precedence: Use Associativity 
+5.	Pop everything from Stack and append to prefix
+6.	Return Reverse of prefix.
