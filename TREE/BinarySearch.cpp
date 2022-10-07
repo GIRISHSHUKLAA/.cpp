@@ -42,5 +42,5 @@ int main()
     if (search(root, x))
         cout << "Found";
     else
-        cout << "Not Found";
+        cout << "Not Found";    
 }
